@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ToguPsihi/1.0.0": {
+        "runtime": {
+          "ToguPsihi.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ToguPsihi/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
