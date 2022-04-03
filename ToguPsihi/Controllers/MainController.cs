@@ -12,10 +12,11 @@ namespace ToguPsihi.Controllers
         // GET: api/<MainController>
         [Route("testOne")]
         [HttpPost]
-        public IActionResult BlockOne()
+        public IActionResult BlockOne([FromBody]TestOne model)
         {
-
-            return Ok(new TestOne());
+            Console.Out.WriteLine("asd");
+            TestOneResult result = new TestOneResult(model);
+            return Ok(result.results.ToHashSet());
         }
         [Route("testTwo")]
         [HttpPost]
