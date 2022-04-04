@@ -14,7 +14,7 @@ namespace ToguPsihi.Controllers
         [HttpPost]
         public IActionResult BlockOne([FromBody]TestOne model)
         {
-            Console.Out.WriteLine("asd");
+            
             TestOneResult result = new TestOneResult(model);
             return Ok(result.results.ToHashSet());
         }
