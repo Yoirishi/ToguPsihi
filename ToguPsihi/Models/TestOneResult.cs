@@ -16,7 +16,53 @@ namespace ToguPsihi.Models
     {
         public TestOneResult(TestOne body)
         {
-            using(ApplicationContext db = new ApplicationContext())
+            body.OneArtistic = fun1(body.OneArtistic);
+            body.OneHuman = fun1(body.OneHuman);
+            body.OneNature = fun1(body.OneNature);
+            body.OneSign = fun1(body.OneSign);
+            body.OneTechnology = fun1(body.OneTechnology);
+            body.TwoBiology = fun2(body.TwoBiology);
+            body.TwoGeography = fun2(body.TwoGeography);
+            body.TwoGeology = fun2(body.TwoGeology);
+            body.TwoIndustry = fun2(body.TwoIndustry);
+            body.TwoPhysics = fun2(body.TwoPhysics);
+            body.TwoChemistry = fun2(body.TwoChemistry);
+            body.TwoTechnique = fun2(body.TwoTechnique);
+            body.TwoEngineering = fun2(body.TwoEngineering);
+            body.TwoMetalworking = fun2(body.TwoMetalworking);
+            body.TwoWoodworking = fun2(body.TwoWoodworking);
+            body.TwoConstruction = fun2(body.TwoConstruction);
+            body.TwoTransport = fun2(body.TwoTransport);
+            body.TwoAAM = fun2(body.TwoAAM);
+            body.TwoMilitary = fun2(body.TwoMilitary);
+            body.TwoHistory = fun2(body.TwoHistory);
+            body.TwoLiterature = fun2(body.TwoLiterature);
+            body.TwoJournalism = fun2(body.TwoJournalism);
+            body.TwoSocial = fun2(body.TwoSocial);
+            body.TwoPedagogy = fun2(body.TwoPedagogy);
+            body.TwoLaw = fun2(body.TwoLaw);
+            body.TwoService = fun2(body.TwoService);
+            body.TwoMaths = fun2(body.TwoMaths);
+            body.TwoEconomy = fun2(body.TwoEconomy);
+            body.TwoForeign = fun2(body.TwoForeign);
+            body.TwoFigurative = fun2(body.TwoFigurative);
+            body.TwoArt = fun2(body.TwoArt);
+            body.TwoPerforming = fun2(body.TwoPerforming);
+            body.Twomusic = fun2(body.Twomusic);
+            body.TwoSports = fun2(body.TwoSports);
+            body.ThreeReal = fun3(body.ThreeReal);
+            body.ThreeInvestigative = fun3(body.ThreeInvestigative);
+            body.ThreeArtistic = fun3(body.ThreeArtistic);
+            body.ThreeSocial = fun3(body.ThreeSocial);
+            body.ThreeEnterprisingn = fun3(body.ThreeEnterprisingn);
+            body.ThreeConventional = fun3(body.ThreeConventional);
+
+
+
+
+
+
+            using (ApplicationContext db = new ApplicationContext())
             {
                 
                 this.results = (from testOne in db.TestOnes
@@ -70,5 +116,64 @@ namespace ToguPsihi.Models
         }
         
         public List<TestOne> results = new List<TestOne>();
+
+        private int? fun1(int? x)
+        {
+            if (x != null)
+            {
+                switch (x)
+                {
+                    case 0: x = 1; break;
+                    case 1: x = 1; break;
+                    case 2: case 3: x = 2; break;
+                    case 4: x = 3; break;
+                    case 5: case 6: x = 4; break;
+                    case 7: case 8: x = 5; break;
+                }
+                return x;
+            }
+
+
+            return null;
+        }
+
+        private int? fun2(int? x)
+        {
+            if (x != null)
+            {
+                switch (x)
+                {
+                    case 0: case 1: case 2: case 3: case 4: x = 1; break;
+                    case 5: case 6: x = 2; break;
+
+                    case 7: case 8: case 9: x = 3; break;
+                    case 10: case 11: case 12: x = 4; break;
+                    case 13: case 14: x = 5; break;
+                }
+                return x;
+            }
+
+
+            return null;
+        }
+        private int? fun3(int? x)
+        {
+            if (x != null)
+            {
+                switch (x)
+                {
+                    case 0: case 1: case 2: case 3: x = 1; break;
+                    case 4: case 5: x = 2; break;
+                    case 6: case 7: case 8: x = 3; break;
+
+                    case 9: case 10: x = 4; break;
+                    case 11: case 12: x = 5; break;
+                }
+                return x;
+            }
+
+
+            return null;
+        }
     }
 }
