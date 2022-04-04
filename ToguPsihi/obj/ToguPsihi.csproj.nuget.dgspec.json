@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Steam\\source\\repos\\ToguPsihi\\ToguPsihi\\ToguPsihi.csproj": {}
+    "F:\\vanilla\\ToguPsihi-master\\ToguPsihi\\ToguPsihi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Steam\\source\\repos\\ToguPsihi\\ToguPsihi\\ToguPsihi.csproj": {
+    "F:\\vanilla\\ToguPsihi-master\\ToguPsihi\\ToguPsihi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Steam\\source\\repos\\ToguPsihi\\ToguPsihi\\ToguPsihi.csproj",
+        "projectUniqueName": "F:\\vanilla\\ToguPsihi-master\\ToguPsihi\\ToguPsihi.csproj",
         "projectName": "ToguPsihi",
-        "projectPath": "C:\\Users\\Steam\\source\\repos\\ToguPsihi\\ToguPsihi\\ToguPsihi.csproj",
-        "packagesPath": "C:\\Users\\Steam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Steam\\source\\repos\\ToguPsihi\\ToguPsihi\\obj\\",
+        "projectPath": "F:\\vanilla\\ToguPsihi-master\\ToguPsihi\\ToguPsihi.csproj",
+        "packagesPath": "C:\\Users\\Danil\\.nuget\\packages\\",
+        "outputPath": "F:\\vanilla\\ToguPsihi-master\\ToguPsihi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Steam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Danil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +43,22 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
