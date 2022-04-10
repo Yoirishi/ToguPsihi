@@ -10,11 +10,9 @@ services:
       - 5076:5076  
   Sasha:
     image: alexawler/psychotest:latest
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://+:5076
     ports:
-      - 80:80 
+      - 4200:80 
+
 
 
   

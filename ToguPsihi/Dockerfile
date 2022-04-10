@@ -11,6 +11,7 @@ COPY ToguPsihi.csproj ToguPsihi.csproj
 RUN dotnet restore ToguPsihi.csproj
 COPY . .
 WORKDIR /src
+COPY testOne.db testOne.db
 RUN dotnet build ToguPsihi.csproj -c Release -o /app
 
 FROM build AS publish

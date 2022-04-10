@@ -7,10 +7,17 @@ public class ApplicationContext : DbContext
      
     public ApplicationContext()
     {
-        Database.EnsureCreated();
+        if (Database.EnsureCreated() == true)
+        {
+            Console.WriteLine("no exist");
+        }
+        else
+        {
+            Console.WriteLine("exist");
+        }
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite("Filename=TestOne.db");
+        optionsBuilder.UseSqlite("Filename=testOne.db");
     }
 }

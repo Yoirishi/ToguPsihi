@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\vanilla\\ToguPsihi-master\\ToguPsihi\\ToguPsihi.csproj": {}
+    "C:\\Users\\Steam\\source\\ToguPsihi\\ToguPsihi\\ToguPsihi.csproj": {}
   },
   "projects": {
-    "F:\\vanilla\\ToguPsihi-master\\ToguPsihi\\ToguPsihi.csproj": {
+    "C:\\Users\\Steam\\source\\ToguPsihi\\ToguPsihi\\ToguPsihi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\vanilla\\ToguPsihi-master\\ToguPsihi\\ToguPsihi.csproj",
+        "projectUniqueName": "C:\\Users\\Steam\\source\\ToguPsihi\\ToguPsihi\\ToguPsihi.csproj",
         "projectName": "ToguPsihi",
-        "projectPath": "F:\\vanilla\\ToguPsihi-master\\ToguPsihi\\ToguPsihi.csproj",
-        "packagesPath": "C:\\Users\\Danil\\.nuget\\packages\\",
-        "outputPath": "F:\\vanilla\\ToguPsihi-master\\ToguPsihi\\obj\\",
+        "projectPath": "C:\\Users\\Steam\\source\\ToguPsihi\\ToguPsihi\\ToguPsihi.csproj",
+        "packagesPath": "C:\\Users\\Steam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Steam\\source\\ToguPsihi\\ToguPsihi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Danil\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Steam\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
